@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularz</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <h1 class="header__text">Formularz</h1>
+        </header>
+        <section class="form">
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Dane podstawowe</legend>
+                    <p>
+                        <label ford="firsName">Imię</label>
+                        <input id="firstName" name="firsName" placeholder="Imię" required>
+                    </p>
+                    <p>
+                        <label ford="lastsName">Nazwisko</label>
+                        <input id="lastsName" name="lastsName" placeholder="Nazwisko" required>
+                    </p>
+                    <p>
+                        <label ford="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </p>
+                    <p>
+                        <label ford="tel">Telefon</label>
+                        <input type="number" id="tel" name="tel" placeholder="telefon" required>
+                    </p>
+                    <p>
+                        <label ford="sex">Płeć</label>
+                        <select id="sex" name="sex">
+                            <option>Mężczyzna</option>
+                            <option>Kobieta</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Język</legend>
+                    <p>
+                        <label><input name="language" type="radio" value="ngielski">Angielski</label>
+                    </p>
+                    <p>
+                        <label><input name="language" type="radio" value="Francuski">Francuski</label>
+                    </p>
+                    <p>
+                        <label><input name="language" type="radio" value="Niemiecki">Niemiecki</label>
+                    </p>
+                    <p>
+                        <label><input name="language" type="radio" value="Polski" checked>Polski</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Ulubione sporty</legend>
+                    <p>
+                        <label><input name="sport" type="checkbox" value="PiłkaNożna">Piłka nożna</label>
+                      </p>
+                      <p>
+                        <label><input name="sport" type="checkbox" value="Tenis">Tenis</label>
+                    </p>
+                    <p>
+                        <label><input name="sport" type="checkbox" value="Siatkówka">Siatkówka</label>
+                    </p>
+                    <p>
+                        <label><input name="sport" type="checkbox" value="PiłkaRęczna">Piłka Ręczna</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Dodatkowe infomacje</legend>
+                    <textarea placeholder="Komentarz"></textarea>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Wyślij">
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
